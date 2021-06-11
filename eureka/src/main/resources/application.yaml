@@ -1,0 +1,14 @@
+server:
+  port: 9000 #eureka运行的端口号
+  address: 127.0.0.1
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    register-with-eureka: false #是否加入eureka注册表
+    fetch-registry: false #还是向eureka请求注册信息表
+    service-url:
+      defaultZone: http://${server.address}:${server.port}/eureka #注册中心地址，其它服务需要注册到该地址
