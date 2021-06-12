@@ -25,6 +25,7 @@
         <module>gateway</module>
         <module>order-center</module>
         <module>user-center</module>
+        <module>common-log</module>
     </modules>
 
     <dependencyManagement>

@@ -35,5 +35,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.leolab.springcloud-202003-demo</groupId>
+            <artifactId>common-log</artifactId>
+        </dependency>
     </dependencies>
 </project>

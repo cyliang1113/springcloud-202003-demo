@@ -1,6 +1,7 @@
 package com.leolab.springcloud202003demo.usercenter.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
     @PostMapping("getUserAddress")
-    String getAddress(@RequestParam(name = "username") String username) {
+    String getAddress(@RequestParam(name = "username") String username) throws InterruptedException {
         log.info("getAddress({})", username);
+        Thread.sleep(7000);
         return "username: " + username + ", address: " + "hangzhou.";
     }
 }
