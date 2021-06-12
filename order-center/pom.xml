@@ -24,6 +24,11 @@
                 <artifactId>order-center-api</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+            <dependency>
+                <groupId>com.leolab.springcloud-202003-demo</groupId>
+                <artifactId>user-center-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
