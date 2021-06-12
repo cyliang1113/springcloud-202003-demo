@@ -1,6 +1,7 @@
 server:
   port: 8001 #eureka运行的端口号
-  address: 127.0.0.1
+  servlet:
+    context-path: /
 
 spring:
   application:

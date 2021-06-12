@@ -1,22 +1,22 @@
-package com.leolab.springcloud202003demo.usercenter;
-import jdk.nashorn.internal.objects.annotations.Getter;
+package com.leolab.springcloud202003demo.gateway;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @SpringBootApplication
+@EnableEurekaClient
 @RestController
-@EnableDiscoveryClient
-public class UserCenterApp {
+public class GatewayApp {
     public static void main(String[] args) {
-        SpringApplication.run(UserCenterApp.class, args);
+        SpringApplication.run(GatewayApp.class, args);
     }
 
     @GetMapping("/hello")
     public String hello() {
-        return String.format("Hello User Center App!");
+        return String.format("Hello Gateway App!");
     }
 }

@@ -17,6 +17,6 @@ public class OrderCenterApp {
 
     @GetMapping("/hello")
     public String hello() {
-        return String.format("Hello!");
+        return String.format("Hello Order Center!");
     }
 }
